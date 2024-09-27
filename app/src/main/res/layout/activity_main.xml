@@ -9,12 +9,15 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="TextView"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tvTitle"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,46 +26,65 @@
         android:id="@+id/tvRemainingAttempts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
-        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tvRemainingAttempts"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
-    <ImageView
-        android:id="@+id/ivQuestionMark"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/tvRemainingAttempts"
-        app:layout_constraintStart_toStartOf="@+id/tvRemainingAttempts"
-        app:layout_constraintTop_toBottomOf="@+id/tvRemainingAttempts"
-        app:srcCompat="@drawable/qm_laberinth" />
+    <TextView
+        android:id="@+id/tvCurrentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tvCurrentValue"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRemainingAttempts" />
 
     <TextView
         android:id="@+id/tvGuessMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/ivQuestionMark"
-        app:layout_constraintStart_toStartOf="@+id/ivQuestionMark"
-        app:layout_constraintTop_toBottomOf="@+id/ivQuestionMark" />
+        android:layout_marginEnd="8dp"
+        android:text="text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCurrentValue" />
 
     <TextView
         android:id="@+id/tvGameFinishedMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/tvGuessMessage"
-        app:layout_constraintStart_toStartOf="@+id/tvGuessMessage"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="text2"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvGuessMessage" />
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.gridlayout.widget.GridLayout>
+        android:id="@+id/glButtons"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

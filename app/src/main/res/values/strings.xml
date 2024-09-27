@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">tema03ejercicio05ampliacion01</string>
+    <string name="tvTitle">Guess the Number</string>
+    <string name="tvRemainingAttempts">Remaining attempts:</string>
+    <string name="tvCurrentValue">\?</string>
+    <string name="winnMessage">Congrats, you have won!</string>
+    <string name="greaterThen">The number is greater!</string>
+    <string name="lessThen">The number is less!</string>
 </resources>

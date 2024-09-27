@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tema03ejercicio05ampliacion01</string>
+    <string name="tvTitle">Adivina el número</string>
+    <string name="tvRemainingAttempts">Intentos restantes:</string>
+    <string name="tvCurrentValue">\?</string>
+    <string name="winnMessage">Felicidades, has ganado!</string>
+    <string name="greaterThen">El número es mayor!</string>
+    <string name="lessThen">El número es menor!</string>
+</resources>
