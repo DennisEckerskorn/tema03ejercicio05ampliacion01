@@ -2,9 +2,11 @@
 <resources>
     <string name="app_name">tema03ejercicio05ampliacion01</string>
     <string name="tvTitle">Adivina el número</string>
-    <string name="tvRemainingAttempts">Intentos restantes:</string>
+    <string name="tvRemainingAttempts">Intentos restantes: %1$d</string>
     <string name="tvCurrentValue">\?</string>
     <string name="winnMessage">Felicidades, has ganado!</string>
     <string name="greaterThen">El número es mayor!</string>
     <string name="lessThen">El número es menor!</string>
+    <string name="gameOver">Juego Terminado! El número correcto era: %1$d</string>
+    <string name="tvStartAgain">Pulsa cualquier botón para empezar de nuevo...</string>
 </resources>
