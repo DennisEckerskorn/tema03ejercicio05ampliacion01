@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
         updateRemaingAttempts();
         enableAllButtons();
         tvGuessMessage.setText("");
+        tvCurrentValue.setText("?");
         tvGameFinishedMessage.setText("");
     }
 
