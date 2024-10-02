@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Referencia al gridLayout:
         GridLayout glButtons = findViewById(R.id.glButtons);
-        int rowCount = 2;
+        int rowCount = 4;
         int columnCount = 5;
 
         createButtons(glButtons, rowCount, columnCount);
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startNewGame() {
-        game = new GuessNumberGame(this, 1, 10);
+        game = new GuessNumberGame(this, 1, 20);
         updateRemaingAttempts();
         enableAllButtons();
         tvGuessMessage.setText("");
